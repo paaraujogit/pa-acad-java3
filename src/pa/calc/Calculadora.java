@@ -9,10 +9,10 @@ public class Calculadora {
 		System.out.println(resEx);
 
 		// ToDo - All Students Must Implement one Operation
-		// - Oper02 - Bruno Rego  - modulo
-		Oper02 ope02=new Oper02();
-		double res02 = ope02.oper(4, 3);
-		System.out.println(res02);
+		// - Oper20 - Hugo Zacarias  - modulo
+		OperEx20 ope20=new OperEx20();
+		double res20 = ope20.oper(4, 3);
+		System.out.println(res20);
 
 	}
 
