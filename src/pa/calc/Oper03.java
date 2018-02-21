@@ -1,6 +1,6 @@
 package pa.calc;
 
-public class Oper02 {
+public class Oper03 {
 
 	//André
 }
