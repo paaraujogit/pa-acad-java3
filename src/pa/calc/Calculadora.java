@@ -7,12 +7,12 @@ public class Calculadora {
 		OperEx opex=new OperEx();
 		double resEx = opex.oper(1, 2);
 		System.out.println(resEx);
-		
+
 		// ToDo - All Students Must Implement one Operation
-		// - Oper0X - Name
-	//	Oper0X ope0X=new Oper0X();
-	//	double res0X = ope0X.oper(X, Y);
-	//	System.out.println(res0X);
+		// - Oper02 - Bruno Rego  - modulo
+		Oper02 ope02=new Oper02();
+		double res02 = ope02.oper(4, 3);
+		System.out.println(res02);
 
 	}
 
