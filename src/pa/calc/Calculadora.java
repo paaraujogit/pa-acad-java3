@@ -17,7 +17,7 @@ public class Calculadora {
 		// ToDo - All Students Must Implement one Operation
 				// - Oper09 - André Monteiro  - Multiplicação
 				Oper09 ope09 = new Oper09();
-				double res09 = ope09.oper(4, 3);
+				double res09 = ope09.oper(5, 3);
 				System.out.println(res09);
 
 	}
