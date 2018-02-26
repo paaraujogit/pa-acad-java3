@@ -20,6 +20,7 @@ public class Calculadora {
 				double res09 = ope09.oper(5, 3);
 				System.out.println(res09); 
 				
+				
 		//Pow do David
 		OperationPowerDavid op = new OperationPowerDavid();
 		System.out.println("Cálculo da Potência: "+op.oper(5, 2));
