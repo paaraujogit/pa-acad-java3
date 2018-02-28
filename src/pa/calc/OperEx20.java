@@ -7,5 +7,4 @@ public class OperEx20 implements ItfOper {
 		return op1+2*op2;
 	} 
 
-
 }
