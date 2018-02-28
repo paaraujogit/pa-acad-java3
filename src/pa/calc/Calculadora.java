@@ -12,7 +12,7 @@ public class Calculadora {
 		// - Oper20 - Hugo Zacarias  - modulo
 		OperEx20 ope20=new OperEx20();
 		double res20 = ope20.oper(6, 1);
-		System.out.println(res20);
+		System.out.println(res20); 
 
 	}
 
