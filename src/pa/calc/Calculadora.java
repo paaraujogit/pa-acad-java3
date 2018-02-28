@@ -1,6 +1,8 @@
 package pa.calc;
 
 import pa.calc.david.OpMultDavid;
+import pa.calc.david.OperationPowerNoPackage;
+import pa.calc.pack02.CalculaVolume;
 
 public class Calculadora {
 
@@ -23,20 +25,22 @@ public class Calculadora {
 		System.out.println(res02);
 
 		// ToDo - All Students Must Implement one Operation
-		// - Oper09 - André Monteiro - Multiplicação
+		// - Oper09 - Andrï¿½ Monteiro - Multiplicaï¿½ï¿½o
 		Oper09 ope09 = new Oper09();
 		double res09 = ope09.oper(5, 3);
 		System.out.println(res09);
 					
 		//Pow do David
-		OperationPowerDavid op = new OperationPowerDavid();
-		System.out.println("Cálculo da Potência: "+op.oper(5, 2));
+		OperationPowerNoPackage op = new OperationPowerNoPackage();
+		System.out.println("Cï¿½lculo da Potï¿½ncia: "+op.oper(5, 2));
 		
-		//Multiplicação do David com a Operação de Soma do Nasser
+		//Multiplicaï¿½ï¿½o do David com a Operaï¿½ï¿½o de Soma do Nasser
 		OpMultDavid opMultDoDavid_e_Nasser = new OpMultDavid();
 		
-		System.out.println("Cálculo da Multiplicação do David com a Soma do Nasser: "+opMultDoDavid_e_Nasser.oper(5, 2));
+		System.out.println("Cï¿½lculo da Multiplicaï¿½ï¿½o do David com a Soma do Nasser: "+opMultDoDavid_e_Nasser.oper(5, 2));
  
+		CalculaVolume operMulti02 = new CalculaVolume();
+		System.out.println("Cacula volume: " + operMulti02.oper(2, 3));
 
 	}
 
