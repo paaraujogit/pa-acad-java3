@@ -29,6 +29,7 @@ class TesteOp {
 		assertEquals(result, 30);
 		System.out.println("Multiplicação: " + result);
 	}
+	
 	@Test
 	void testDivisao() {
 		Divisao div = new Divisao();
