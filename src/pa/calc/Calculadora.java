@@ -1,6 +1,6 @@
 package pa.calc;
 
-import pack.david.OpMultDavid;
+import pa.calc.david.OpMultDavid;
 
 public class Calculadora {
 
@@ -30,7 +30,7 @@ public class Calculadora {
 		//Multiplicação do David com a Operação de Soma do Nasser
 		OpMultDavid opMultDoDavid_e_Nasser = new OpMultDavid();
 		
-		System.out.println("Cálculo da Multiplicação do David com a Soma do Nasser: "+op.oper(5, 2));
+		System.out.println("Cálculo da Multiplicação do David com a Soma do Nasser: "+opMultDoDavid_e_Nasser.oper(5, 2));
 
 
 	}
