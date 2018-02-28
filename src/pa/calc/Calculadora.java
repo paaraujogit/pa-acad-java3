@@ -11,7 +11,7 @@ public class Calculadora {
 		// ToDo - All Students Must Implement one Operation
 		// - Oper20 - Hugo Zacarias  - modulo
 		OperEx20 ope20=new OperEx20();
-		double res20 = ope20.oper(4, 3);
+		double res20 = ope20.oper(6, 1);
 		System.out.println(res20);
 
 	}
