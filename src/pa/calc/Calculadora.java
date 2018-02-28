@@ -1,5 +1,7 @@
 package pa.calc;
 
+import pack.david.OpMultDavid;
+
 public class Calculadora {
 
 	public static void main(String[] args) {
@@ -25,6 +27,10 @@ public class Calculadora {
 		OperationPowerDavid op = new OperationPowerDavid();
 		System.out.println("Cálculo da Potência: "+op.oper(5, 2));
 		
+		//Multiplicação do David com a Operação de Soma do Nasser
+		OpMultDavid opMultDoDavid_e_Nasser = new OpMultDavid();
+		
+		System.out.println("Cálculo da Multiplicação do David com a Soma do Nasser: "+op.oper(5, 2));
 
 
 	}
