@@ -28,7 +28,7 @@ public class OpMultDavidTest {
 		double expected = 10.0;
 		double result = op.oper(5, 2);
 		
-		assertEquals(expected, result);
+		assertEquals(expected, result, 0);
 		
 	}
 	
