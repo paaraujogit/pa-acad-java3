@@ -1,5 +1,5 @@
 package src.calc.RuiDuarte;
-public class OpFactRuiD implements InOfCal {
+public class OpFact implements InOfCal {
     
     int factorial;
    
