@@ -1,17 +1,11 @@
 package pa.calc.david.test;
 
 import static org.junit.Assert.assertEquals;
-
-import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.DisplayName;
-import org.junit.jupiter.api.Test;
-import org.junit.platform.runner.JUnitPlatform;
-import org.junit.runner.RunWith;
+import org.junit.Test;
 
 import pa.calc.david.OpMultDavid;
 
-@RunWith(JUnitPlatform.class)
+//@RunWith(JUnitPlatform.class)
 public class OpMultDavidTest {
 
 //	@BeforeAll
