@@ -12,7 +12,7 @@ public class Calculadora {
             OpFact oper10=new OpFact();
  
             valor=oper10.fact(10);
-            System.out.println("O factorial é: "+valor);
+            System.out.println("O factorial é : "+valor);
             
         }
         

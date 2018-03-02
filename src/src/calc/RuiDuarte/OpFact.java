@@ -12,7 +12,7 @@ public class OpFact implements InOfCal {
     public double fact(int val1) {
         
        for( int i=val1; i>=1;i--){
-           if(i==1){
+           if(i==val1){
                this.factorial=1;
            }
            else {
