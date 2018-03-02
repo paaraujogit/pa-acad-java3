@@ -8,9 +8,6 @@ public class OpFact implements InOfCal {
         
     }*/
     
-
-    
-
     @Override
     public double fact(int val1) {
         
