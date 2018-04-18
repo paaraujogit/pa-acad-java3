@@ -74,13 +74,18 @@ public class Cliente extends Pessoa{
 	public List<Cartao> getCartoes() {
 		return cartoes;
 	}
+	
+	public void cancelarCartao(Cartao c) {
+		cartoes.remove(c);
+	}
+
+	public void adicionarCartao(Cartao c) {
+		cartoes.add(c);
+	}	
+	
 	public String getGestorConta() {
 		return gestorConta;
 	}
-	public void setGestorConta(String gestorConta) {
-		this.gestorConta = gestorConta;
-	}
-	
 	
 	
 }
