@@ -16,14 +16,15 @@ public class Cliente extends Pessoa{
 	List<Conta> contas;
 	List<Cartao> cartoes;	
 	String gestorConta;
+	private static long contador = 0;
 	
 	public Cliente(String nome, String morada, String[] telefone, String[] emails, String profissao, 
-					  int numAgencia, long numCliente, TipoCliente tipoCliente, int cartaoCidadao) {
+					  int numAgencia, TipoCliente tipoCliente, int cartaoCidadao) {
 
 		super(nome, morada, telefone, emails, profissao);
 		
 		this.numAgencia = numAgencia;
-		this.numCliente = numCliente;
+		this.numCliente = ++contador;
 		this.tipoCliente = tipoCliente;
 		this.cartaoCidadao = cartaoCidadao;
 		this.contas = new ArrayList<Conta>();		
@@ -45,9 +46,6 @@ public class Cliente extends Pessoa{
 	}
 	public long getNumCliente() {
 		return numCliente;
-	}
-	public void setNumCliente(long numCliente) {
-		this.numCliente = numCliente;
 	}
 	public TipoCliente getTipoCliente() {
 		return tipoCliente;
