@@ -3,37 +3,29 @@ package pa.david;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Cliente {
+import pa.comum.Pessoa;
+
+public class Cliente extends Pessoa{
 
 	enum TipoCliente{NORMAL, VIP};
 	
 	int numAgencia;
 	long numCliente;
 	TipoCliente tipoCliente;
-	String nome;
 	int cartaoCidadao;
-	String morada;
-	String[] telefone;
-	String[] emails;
-	String profissao;
 	List<Conta> contas;
 	List<Cartao> cartoes;	
 	String gestorConta;
+	
+	public Cliente(String nome, String morada, String[] telefone, String[] emails, String profissao, 
+					  int numAgencia, long numCliente, TipoCliente tipoCliente, int cartaoCidadao) {
 
-	
-	
-	public Cliente(int numAgencia, long numCliente, TipoCliente tipoCliente, String nome, int cartaoCidadao,
-			String morada, String[] telefone, String[] emails, String profissao) {
-		super();
+		super(nome, morada, telefone, emails, profissao);
+		
 		this.numAgencia = numAgencia;
 		this.numCliente = numCliente;
 		this.tipoCliente = tipoCliente;
-		this.nome = nome;
 		this.cartaoCidadao = cartaoCidadao;
-		this.morada = morada;
-		this.telefone = telefone;
-		this.emails = emails;
-		this.profissao = profissao;
 		this.contas = new ArrayList<Conta>();		
 		this.cartoes = new ArrayList<Cartao>();
 		
@@ -63,41 +55,12 @@ public class Cliente {
 	public void setTipoCliente(TipoCliente tipoCliente) {
 		this.tipoCliente = tipoCliente;
 	}
-	public String getNome() {
-		return nome;
-	}
-	public void setNome(String nome) {
-		this.nome = nome;
-	}
+
 	public int getCartaoCidadao() {
 		return cartaoCidadao;
 	}
 	public void setCartaoCidadao(int cartaoCidadao) {
 		this.cartaoCidadao = cartaoCidadao;
-	}
-	public String getMorada() {
-		return morada;
-	}
-	public void setMorada(String morada) {
-		this.morada = morada;
-	}
-	public String[] getTelefone() {
-		return telefone;
-	}
-	public void setTelefone(String[] telefone) {
-		this.telefone = telefone;
-	}
-	public String[] getEmails() {
-		return emails;
-	}
-	public void setEmails(String[] emails) {
-		this.emails = emails;
-	}
-	public String getProfissao() {
-		return profissao;
-	}
-	public void setProfissao(String profissao) {
-		this.profissao = profissao;
 	}
 	public void setContas(List<Conta> contas) {
 		this.contas = contas;
