@@ -10,7 +10,7 @@ public class Cliente extends Pessoa{
 
 	
 	int numAgencia;
-	long numCliente;
+	Long numCliente;
 	TipoCliente tipoCliente;
 	int cartaoCidadao;
 	List<Conta> contas;
@@ -44,7 +44,7 @@ public class Cliente extends Pessoa{
 	public void setNumAgencia(int numAgencia) {
 		this.numAgencia = numAgencia;
 	}
-	public long getNumCliente() {
+	public Long getNumCliente() {
 		return numCliente;
 	}
 	public TipoCliente getTipoCliente() {
@@ -83,6 +83,10 @@ public class Cliente extends Pessoa{
 	
 	public String getGestorConta() {
 		return gestorConta;
+	}
+	
+	public boolean equals(Cliente c) {
+		return this.numCliente.equals(c.numCliente);
 	}
 	
 	
