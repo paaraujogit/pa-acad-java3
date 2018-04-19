@@ -24,8 +24,8 @@ public class ClienteTeste {
 		int cartaoCidadao = 11009900;
 
 		//Clientes exemplo.
-		Cliente cliente1 = new Cliente(nome, morada, telefones, emails, profissao, numAgencia, tipoCliente, cartaoCidadao);		
-		Cliente cliente2 = new Cliente(nome, morada, telefones, emails, profissao, numAgencia, tipoCliente, cartaoCidadao);		
+		Cliente cliente1 = new Cliente(cartaoCidadao, nome, morada, telefones, emails, profissao, numAgencia, tipoCliente);		
+		Cliente cliente2 = new Cliente(cartaoCidadao, nome, morada, telefones, emails, profissao, numAgencia, tipoCliente);		
 		
 		assertFalse(cliente1.equals(cliente2));
 		

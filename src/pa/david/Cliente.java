@@ -12,21 +12,28 @@ public class Cliente extends Pessoa{
 	int numAgencia;
 	Long numCliente;
 	TipoCliente tipoCliente;
-	int cartaoCidadao;
 	List<Conta> contas;
 	List<Cartao> cartoes;	
 	String gestorConta;
 	private static long contador = 0;
 	
-	public Cliente(String nome, String morada, String[] telefone, String[] emails, String profissao, 
-					  int numAgencia, TipoCliente tipoCliente, int cartaoCidadao) {
+	public Cliente(int cartaoCidadao, String nome, String morada, String[] telefone, String[] emails, String profissao, 
+				   int numAgencia, TipoCliente tipoCliente) {
 
-		super(nome, morada, telefone, emails, profissao);
+		super(cartaoCidadao, nome, morada, telefone, emails, profissao);
+		inicializacao(numAgencia, tipoCliente);				
+	}
+	
+	public Cliente(Pessoa p, int numAgencia, TipoCliente tipoCliente) {
+		super(p.getCartaoCidadao(), p.getNome(), p.getMorada(), p.getTelefone(), p.getEmails(), p.getProfissao());
+		inicializacao(numAgencia, tipoCliente);
+	}
+	
+	private void inicializacao(int numAgencia, TipoCliente tipoCliente) {
 		
 		this.numAgencia = numAgencia;
 		this.numCliente = ++contador;	//Atribuição única do Num de Cliente.
 		this.tipoCliente = tipoCliente;
-		this.cartaoCidadao = cartaoCidadao;
 		this.contas = new ArrayList<Conta>();		
 		this.cartoes = new ArrayList<Cartao>();
 		
@@ -36,8 +43,8 @@ public class Cliente extends Pessoa{
 		if( tipoCliente.equals(TipoCliente.VIP)) {
 			//this.gestorConta = new GestorConta();
 		}
-		
 	}
+	
 	public int getNumAgencia() {
 		return numAgencia;
 	}
@@ -54,12 +61,6 @@ public class Cliente extends Pessoa{
 		this.tipoCliente = tipoCliente;
 	}
 
-	public int getCartaoCidadao() {
-		return cartaoCidadao;
-	}
-	public void setCartaoCidadao(int cartaoCidadao) {
-		this.cartaoCidadao = cartaoCidadao;
-	}
 	public void setContas(List<Conta> contas) {
 		this.contas = contas;
 	}
