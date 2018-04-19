@@ -7,7 +7,7 @@ import pa.comum.Pessoa;
 
 public class Cliente extends Pessoa{
 
-	enum TipoCliente{NORMAL, VIP};
+
 	
 	int numAgencia;
 	long numCliente;
@@ -24,14 +24,14 @@ public class Cliente extends Pessoa{
 		super(nome, morada, telefone, emails, profissao);
 		
 		this.numAgencia = numAgencia;
-		this.numCliente = ++contador;
+		this.numCliente = ++contador;	//Atribuição única do Num de Cliente.
 		this.tipoCliente = tipoCliente;
 		this.cartaoCidadao = cartaoCidadao;
 		this.contas = new ArrayList<Conta>();		
 		this.cartoes = new ArrayList<Cartao>();
 		
-		this.contas.add(new Conta());	//Conta à Ordem
-		this.cartoes.add(new Cartao()); //Cartao de débito
+		this.contas.add(new Conta());	//Criacao Automatica da Conta a Ordem.
+		this.cartoes.add(new Cartao()); //Cartao Automatica do 1º Cartao Debito.
 		
 		if( tipoCliente.equals(TipoCliente.VIP)) {
 			//this.gestorConta = new GestorConta();
