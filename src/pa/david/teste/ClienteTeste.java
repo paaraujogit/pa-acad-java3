@@ -11,7 +11,7 @@ import pa.david.TipoCliente;
 public class ClienteTeste {
 
 	@Test
-	void testUnicidadeNumCliente() {
+	void testUnicidadeCliente() {
 		
 		//Cliente 1 exemplo.
 		String nome = "Cliente_David";
