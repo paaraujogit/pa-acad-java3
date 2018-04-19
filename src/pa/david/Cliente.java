@@ -30,8 +30,8 @@ public class Cliente extends Pessoa{
 		this.contas = new ArrayList<Conta>();		
 		this.cartoes = new ArrayList<Cartao>();
 		
-		this.contas.add(new Conta());	//Criacao Automatica da Conta a Ordem.
-		this.cartoes.add(new Cartao()); //Cartao Automatica do 1º Cartao Debito.
+		this.contas.add(new Conta(/*Conta.CONTA_ORDEM*/));	//Criacao Automatica da Conta a Ordem.
+		this.cartoes.add(new Cartao(/*Cartao.CARTAO_DEBITO*/)); //Cartao Automatica do 1º Cartao Debito.
 		
 		if( tipoCliente.equals(TipoCliente.VIP)) {
 			//this.gestorConta = new GestorConta();
