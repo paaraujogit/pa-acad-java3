@@ -128,17 +128,6 @@
     <additional_attributes>10.0;60.0;10.0;10.0</additional_attributes>
   </element>
   <element>
-    <id>UMLUseCase</id>
-    <coordinates>
-      <x>980</x>
-      <y>40</y>
-      <w>120</w>
-      <h>40</h>
-    </coordinates>
-    <panel_attributes>Use case 1</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
     <id>UMLPackage</id>
     <coordinates>
       <x>170</x>
