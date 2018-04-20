@@ -4,12 +4,14 @@
   <element>
     <id>UMLActor</id>
     <coordinates>
-      <x>590</x>
+      <x>610</x>
       <y>70</y>
-      <w>120</w>
-      <h>110</h>
+      <w>80</w>
+      <h>140</h>
     </coordinates>
-    <panel_attributes>Interface Java FX</panel_attributes>
+    <panel_attributes>Interface
+do
+Banco</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -26,12 +28,14 @@
   <element>
     <id>UMLActor</id>
     <coordinates>
-      <x>90</x>
+      <x>70</x>
       <y>70</y>
-      <w>60</w>
-      <h>110</h>
+      <w>100</w>
+      <h>140</h>
     </coordinates>
-    <panel_attributes>Cliente</panel_attributes>
+    <panel_attributes>Funcionário
+do 
+Banco</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
