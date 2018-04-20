@@ -6,7 +6,7 @@ public class Conta {
 	
 	int numeroConta;
 	Cliente proprietario;
-	String tipoConta; 
+	String tipoConta;
 	
 	
 	

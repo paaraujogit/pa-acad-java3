@@ -3,7 +3,7 @@ package pa.hugo;
 import pa.david.Cliente;
 import pa.david.TipoCliente;
 
-public class Main { 
+public class Main {
 
 	public static void main(String[] args) {
 		
