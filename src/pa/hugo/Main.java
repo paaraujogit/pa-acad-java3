@@ -21,6 +21,12 @@ public class Main {
 		
 		Conta ct = new Conta();
 		ct.setProprietario(cliente1);
+		ct.setTipoConta("ordem");
+		ct.criarMovimentos();
+		ct.adicionarMovimento(200.0);
+		System.out.println("Olá:\n");
+		System.out.println(ct.getMovimentos());
+		
 	}
 
 }
