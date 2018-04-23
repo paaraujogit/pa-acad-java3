@@ -11,7 +11,7 @@ public class Conta {
 	double saldo = 0.0;
 	ArrayList<Double> movimentos;
 	
-	Conta(int num, Cliente cl, String tc,double saldo, ArrayList<Double> movimentos) {
+	public Conta(int num, Cliente cl, String tc,double saldo, ArrayList<Double> movimentos) {
 		this.numeroConta = num;
 		this.proprietario = cl;
 		this.tipoConta = tc;
@@ -19,11 +19,11 @@ public class Conta {
 		this.movimentos = movimentos ;
 	}
 	
-	Conta(){
+	public Conta(){
 		
 	}
 
-	public int getNumeroConta() {
+	public int getNumeroConta() { 
 		return numeroConta;
 	}
 	
