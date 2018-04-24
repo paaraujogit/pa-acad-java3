@@ -1,9 +1,12 @@
-package pa.david;
+package pa.david.cliente;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import pa.comum.Pessoa;
+import pa.david.Cartao;
+import pa.david.TipoCliente;
+import pa.hugo.Conta;
 
 public class Cliente extends Pessoa{
 

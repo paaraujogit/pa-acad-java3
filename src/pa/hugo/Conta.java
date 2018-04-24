@@ -1,7 +1,8 @@
 package pa.hugo;
 
 import java.util.*;
-import pa.david.Cliente;
+
+import pa.david.cliente.Cliente;
 
 public class Conta {
 	
