@@ -4,7 +4,7 @@ import static org.junit.Assert.assertFalse;
 
 import org.junit.jupiter.api.Test;
 
-import pa.david.Cliente;
+import pa.david.cliente.Cliente;
 import pa.david.TipoCliente;
 
 

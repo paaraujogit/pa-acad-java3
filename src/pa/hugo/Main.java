@@ -1,6 +1,6 @@
 package pa.hugo;
 
-import pa.david.Cliente;
+import pa.david.cliente.Cliente;
 import pa.david.TipoCliente;
 
 public class Main {
