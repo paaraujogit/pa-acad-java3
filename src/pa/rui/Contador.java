@@ -1,5 +1,7 @@
 package pa.rui;
 
+
+
 public class Contador {
     
     private static Contador contaSinngleton=null;
@@ -22,12 +24,12 @@ public class Contador {
     }
     
     
-    private void setConta(int conta){
+    private void setContador(int conta){
     
         this.conta=conta;
     }
     
-    public int getConta(){
+    public int getContador(){
     
         return this.conta;
     }
@@ -37,7 +39,7 @@ public class Contador {
     
         for(int i=0; i<3; i++){
             
-            setConta(getConta()+1);
+            setContador(getContador()+1);
         }
     }
     
