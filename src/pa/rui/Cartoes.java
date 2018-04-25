@@ -49,11 +49,7 @@ public class Cartoes {
         
         double valor=0;
         int op;
-        
-           /* System.out.println("Menu de Transferencia (Seleccione o tipo de cartão)");
-            System.out.println("1-Debito");
-            System.out.println("2-Credito");
-            op=teclado.nextInt();*/
+       
             
             op=this.getTipo();
             
@@ -71,8 +67,8 @@ public class Cartoes {
                     }
                     else {
 
-                        c1.setSaldo(c1.getSaldo()-=valor);
-                        c2.setSaldo(c2.getSaldo()+=valor);
+                      //  c1.setSaldo(c1.getSaldo()-=valor);  
+                       // c2.setSaldo(c2.getSaldo()+=valor);
 
                         System.out.println("Status das Contas");
                         System.out.println("Conta "+c1.getNumeroConta()+" : ");
@@ -91,7 +87,7 @@ public class Cartoes {
                     System.out.println("Qual a Quantia que pretende transferir da Conta "+c1.getNumeroConta()+"Para a Conta "+c2.getNumeroConta());
                     valor=teclado.nextDouble();
                     
-                    if(valor>((c1.getSaldo())+500){
+                    if(valor>((c1.getSaldo())+500)){
 
                         System.out.println("A conta "+c1.getNumeroConta()+"Não tem dinheiro suficiente para efectuar a transferência");
 
@@ -99,8 +95,8 @@ public class Cartoes {
                     
                     else {
 
-                        c1.setSaldo(c1.getSaldo()-=valor);
-                        c2.setSaldo(c2.getSaldo()+=valor);
+                       // c1.setSaldo(c1.getSaldo()-=valor);
+                       // c2.setSaldo(c2.getSaldo()+=valor);
 
                         System.out.println("Status das Contas");
                         System.out.println("Conta "+c1.getNumeroConta()+" : ");
