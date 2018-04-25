@@ -1,11 +1,12 @@
 package pa.rui;
+import pa.hugo.Conta;
 
 import java.util.Scanner;
 
 public class Cartoes {
 
     int tipo;
-    Contas c1,c2;
+    Conta c1,c2;
     int op;
     Contador numero;
     
@@ -24,11 +25,13 @@ public class Cartoes {
 
                     case 1: this.numero=numero.getInstancia();
                             this.numero.incremento();
+                            this.setTipo(op);
                             System.out.println("Cartao de Debito Criado com o numero "+numero.getContador());
                             break;
 
                     case 2: this.numero=numero.getInstancia();
                             this.numero.incremento();
+                            this.setTipo(op);
                             System.out.println("Cartao de Credito Criado com o numero "+numero.getContador());
                             break;
 
@@ -47,20 +50,23 @@ public class Cartoes {
         double valor=0;
         int op;
         
-            System.out.println("Menu de Transferencia (Seleccione o tipo de cartão)");
+           /* System.out.println("Menu de Transferencia (Seleccione o tipo de cartão)");
             System.out.println("1-Debito");
             System.out.println("2-Credito");
+            op=teclado.nextInt();*/
+            
+            op=this.getTipo();
             
             switch (op){
                 
                 case 1:
             
-                    System.out.println("Qual a Quantia que pretende transferir da Conta "+c1.getNumero()+"Para a Conta "+c2.getNumero());
-                    valor=painel.nextDouble();
+                    System.out.println("Qual a Quantia que pretende transferir da Conta "+c1.getNumeroConta()+"Para a Conta "+c2.getNumeroConta());
+                    valor=teclado.nextDouble();
 
-                    if(valor>c1.getSaldo){
+                    if(valor>c1.getSaldo()){
 
-                        System.out.println("A conta "+c1.getNumero+"Não tem dinheiro suficiente para efectuar a transferência");
+                        System.out.println("A conta "+c1.getNumeroConta()+"Não tem dinheiro suficiente para efectuar a transferência");
 
                     }
                     else {
@@ -69,12 +75,12 @@ public class Cartoes {
                         c2.setSaldo(c2.getSaldo()+=valor);
 
                         System.out.println("Status das Contas");
-                        System.out.println("Conta "+c1.getNumero()+" : ");
-                        System.out.println(c1.getStatus()+"\n\n");
+                        System.out.println("Conta "+c1.getNumeroConta()+" : ");
+                        System.out.println("Proprietario "+c1.getProprietario()+"\n\n");
 
 
-                        System.out.println("Conta "+c2.getNumero()+" : ");
-                        System.out.println(c2.getStatus());
+                        System.out.println("Conta "+c2.getNumeroConta()+" : ");
+                        System.out.println("Proprietario "+c2.getProprietario()+"\n\n");
 
                     }
                     break;
@@ -82,14 +88,47 @@ public class Cartoes {
                 
                 case 2:
                     
-                    System.out.println("Qual a Quantia que pretende transferir da Conta "+c1.getNumero()+"Para a Conta "+c2.getNumero());
+                    System.out.println("Qual a Quantia que pretende transferir da Conta "+c1.getNumeroConta()+"Para a Conta "+c2.getNumeroConta());
                     valor=teclado.nextDouble();
                     
+                    if(valor>((c1.getSaldo())+500){
 
+                        System.out.println("A conta "+c1.getNumeroConta()+"Não tem dinheiro suficiente para efectuar a transferência");
+
+                    }
                     
+                    else {
+
+                        c1.setSaldo(c1.getSaldo()-=valor);
+                        c2.setSaldo(c2.getSaldo()+=valor);
+
+                        System.out.println("Status das Contas");
+                        System.out.println("Conta "+c1.getNumeroConta()+" : ");
+                        System.out.println("Proprietario "+c1.getProprietario()+"\n\n");
+
+
+                        System.out.println("Conta "+c2.getNumeroConta()+" : ");
+                        System.out.println("Proprietario "+c2.getProprietario()+"\n\n");
+
+                    }
                     
+                    break;
+                    
+                default:;
+
+                     
                     
             }
+            
+            
+    }
+     
+    public int getTipo() {
+        return tipo;
+    }
+
+    public void setTipo(int tipo) {
+        this.tipo = tipo;
     }
         
         
